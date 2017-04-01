@@ -127,6 +127,7 @@ body {
 .button.mint {
 	background-color: #17c2a4;
 	border-bottom: 4px solid #14a58c;
+	margin: 50px 0;
 }
 
 .top-button {
@@ -172,10 +173,11 @@ body {
 
 .part ul {
 	padding: 0;
+	overflow: hidden;
 }
 
 .part li {
-	width: 240px;
+	width: 215px;
 	height: 330px;
 	float: left;
 	text-align: center;
@@ -184,7 +186,7 @@ body {
 }
 
 .part li + li {
-	// margin-left: 30px;
+	margin-left: 30px;
 }
 
 .part.second li {
@@ -287,15 +289,133 @@ body {
 	text-align: center;
 }
 
+#portfolio-grid img {
+	width: 450px;
+}
+
 .part.sixth .heading {
 	color: #fff;
 }
 
 #reviews-grid {
-
+	margin: 50px 0;
+	overflow: hidden;
 }
 
 .reviews-item {
 	width: 50%;
 	float: left;
+	color: #fff;
+}
+
+.reviews-container {
+	width: 400px;
+	margin: 0 auto;
+	height: 200px;
+}
+
+.reviews-descr:before {
+	content: '';
+	width: 80px;
+	height: 80px;
+	float: left;
+	background-color: #787878;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+.reviews-descr {
+	display: block;
+	font-style: italic;
+}
+
+.reviews-container h4 {
+	display: block;
+	margin: 5px 100px 0 100px;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+.reviews-name {
+	display: block;
+	margin: 0 100px 5px 100px;
+	color: #ffdd99;
+	font-size: 14px;
+}
+
+.part.seventh .heading {
+	color: #fff;
+}
+
+.button.blue {
+	background-color: #30bae7;
+	border-bottom: 4px solid #299ec5;
+}
+
+form {
+	display: block;
+	text-align: center;
+	height: 500px;
+	margin: 0 auto;
+}
+
+form input {
+	width: calc(34% - 2px);
+	display: inline-block;
+	margin: 20px 0 0 0;
+	background-color: #273a71;
+	border: 0;
+	height: 30px;
+	padding: 15px 30px;
+	border-radius: 5px;
+	font-size: 18px;
+	color: #fff;
+}
+
+#firstname {
+	margin-right: 20px;
+}
+
+form textarea {
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	resize: none;
+	width: calc(76% + 4px);
+	padding: 15px 30px;
+	background-color: #273a71;
+	border: 0;
+	font-size: 18px;
+	color: #fff;
+}
+
+footer {
+	clear: both;
+	height: 80px;
+	width: 100%;
+	background-color: #344b8e;
+}
+
+footer ul {
+	margin: 0 auto;
+	text-align: center;
+	padding: 0;
+}
+
+footer li {
+	margin-top: 20px;
+	display: inline-block;
+	list-style: none;
+}
+
+footer li + li {
+	margin-left: 30px;
+}
+
+footer li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
 }
