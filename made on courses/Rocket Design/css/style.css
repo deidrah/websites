@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
+
+* {
+	margin: 0;
+	padding: 0;
+	border:0;
+}
+
+body {
+	background: #f5f5f5;
+	color: #67727a;
+	font-family: "Alegreya", sans-serif;
+	margin: 0;
+}
+
+h2 {
+	font-size: 250%;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 2%;
+	color: #f5f5f5;	
+}
+
+h3 {
+	font-size: 175%;
+	line-height: 155%;
+	padding: 5% 0;
+	font-weight: 400;
+	color: #f5f5f5;
+}
+
+p {
+	font-size: 160%;
+	line-height: 150%;
+	padding: 3%;
+	text-indent: 2%;
+	text-align: justify;
+	color: #f5f5f5;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	margin-bottom: -4px;
+}
+
+header {
+	background-color: #6991ac;
+	width: 100%;
+	height: 86px;
+	position: fixed;
+	top:0;
+}
+
+#header-inner {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#logo {
+	background: url("../img/RD.png") no-repeat center;
+	width: 200px;
+	height: 60px;
+	float: left;
+	margin: 20px;
+}
+
+/*nawigacja*/
+
+nav{
+	float: right;
+	padding: 25px 20px 0 0;
+}
+
+#menu-icon {
+	display: none;
+	background: url("../img/nav.png") center;
+	width: 40px;
+	height: 40px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+nav ul li {
+	font-family: "Alegreya Sans", sans-serif;
+	font-size: 150%;
+	display: inline-block;
+	float: left;
+	padding: 10px;
+}
+
+nav ul li a {
+	color: #f5f5f5;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: #c3d7df;
+}
+
+.current {
+	color: #c3d7df;
+}
+
+/*baner*/
+
+.banner {
+	width: 100%;
+	background-color: #6991ac;
+	padding-top: 86px;
+}
+
+.banner-inner {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+/*cztery kolumny*/
+
+.one-fourth {
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+
+#html, .desktop {
+	background-color: #f1aa90;
+}
+
+#css, .mobile {
+	background-color: #beb9ad;
+}
+
+#seo {
+	background-color: #aadcd2;
+}
+
+#social, .tablet {
+	background-color: #a2b2c1;
+}
+
+.one-fourth i {
+	color: #f0f0f0;
+	font-size: 500%;
+	padding: 13% 0 4% 0;
+}
+
+/*dwie kolumny*/
+
+.inner-wrapper, .inner-wrapper2 {
+	float: left;
+	width: 100%;
+	background-color: #c3d7df;
+}
+
+.inner-wrapper aside, .inner-wrapper2 article {
+	float: left;
+	width: 50%;
+	margin: 0 auto;
+	height: auto;
+}
+.
+inner-wrapper article, .inner-wrapper2 aside {
+	float: right;
+	width: 50%;
+	margin: 0 auto;
+	height: auto;
+}
+
+/*trzy kolumny*/
+
+.inner-wrapper3 {
+	float: left;
+	width: 100%;
+	background-color:  #aadcd2;
+}
+
+.one-third {
+	width: 33.333333%;
+	float: left;
+	text-align: center;
+}
+
+#google {
+	background-color: #a2b2c1;
+}
+
+#marketing {
+	background-color: #beb9ad;
+}
+
+#customers, #smiley {
+	background-color: #aadcd2;
+}
+
+#smiley {
+	padding: 0 0 1%;
+	clear: both;
+}
+
+/*footer*/
+
+footer {
+	background-color: #6991ac;
+	width: 100%;
+}
+
+.social {
+	list-style-type: none;
+	text-align: center;
+}
+
+.social li {
+	display: inline;
+}
+
+.social i {
+	font-size: 460%;
+	margin:1%;
+	padding: 5% 5% 5% 4%;
+	color: #c3d7df;
+} 
+
+.social i:hover {
+	color: #f5f5f5;
+}
+
+footer.second {
+	border-top: 1px solid #aadcd2;
+	background-color: #544b59;
+	margin: 0;
+}
+
+footer.second p {
+	padding: 5px 0 9px 0;
+	text-align: center;
+}
+
+/*responsywnosc*/
+
+@media screen and (max-width:768px) {
+	h2 {
+		font-size: 150%;
+	}
+
+	h3 {
+		font-size: 125%;
+	}
+
+	p {
+		font-size: 120%;
+	}
+
+	header {
+		position: absolute;
+	}
+
+	#logo {
+		margin: 15px 0 20px -25px;
+		background: url("../img/RD_mobile.png") no-repeat center;
+	}
+
+	#menu-icon {
+		display: inline-block;
+	}
+
+	nav ul, nav:active ul {
+		display: none;
+	}
+
+	nav:hover ul {
+		display: block;
+		z-index: 1000;
+		position: absolute;
+		padding: 20px;
+		background-color: #6991ac;
+		right: 20px;
+		width: 50%;
+		border-radius: 5px 0 5px 5px;
+		border: 1px solid #fff;
+	}
+
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+	}
+
+	.banner {
+		padding-top: 86px;
+	}
+
+	.one-fourth {
+		float: left;
+		width: 100%;
+	}
+
+	.one-fourth i {
+		font-size: 350%;
+		padding: 4% 0 1% 0;
+	}
+
+	.inner-wrapper article, .inner-wrapper2 aside, .inner-wrapper2 article, .inner-wrapper aside {
+		width: 100%;
+	}
+
+	.inner-wrapper2 aside {
+		display: none;
+	}
+
+	.one-third {
+		width: 100%;
+	}
+
+	.social i {
+		font-size: 180%;
+	}
+}

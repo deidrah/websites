@@ -1,0 +1,301 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,700);
+
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: " ";
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body {
+	margin: 0;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.part {
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.part.first {
+	background-color: #87509c;
+}
+
+.part .heading {
+	color: #393939;
+}
+
+#top {
+	overflow: hidden;
+	padding-bottom: 10px;
+}
+
+#logo {
+	background: url("../img/logo.png") no-repeat;
+	width: 117px;
+	height: 37px;
+	display: block;
+	text-indent: -1000em;
+	float: left;
+	margin-top: 60px;
+
+}
+
+#menu {
+	float: right;
+	margin-top: 72px;
+}
+
+#menu a {
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 5px 10px;
+	transition: .3s;
+	border-radius: 5px;
+}
+
+#menu a + a {
+	margin-left: 10px;
+}
+
+#menu .active,
+#menu a:hover {
+	background-color: #643a79;
+}
+
+.part.second {
+	background-color: #17c2a4;
+}
+
+.part.third {
+	background-color: #e7f1f8;
+}
+
+.part.fourth {
+	background-color: #fff;
+}
+
+.part.fifth {
+	background-color: #ffdd99;
+}
+
+.part.sixth {
+	background-color: #d74680;
+}
+
+.part.seventh {
+	background-color: #3c5499;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto; // centruje 
+}
+
+#headline {
+	font-size: 42px;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	margin-top: 130px;
+}
+
+.button {
+	color: #fff;
+	border-radius: 5px;
+	min-width: 300px;
+	padding: 20px 0;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: bold;
+}
+
+.button.orange {
+	background-color: #eb7d4b;
+	border-bottom: 4px solid #c86a40;
+}
+
+.button.mint {
+	background-color: #17c2a4;
+	border-bottom: 4px solid #14a58c;
+}
+
+.top-button {
+	text-align: center;
+}
+
+.heading {
+	text-align: center;
+}
+
+.heading h2 {
+	font-size: 31px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 90px;
+	letter-spacing: 2px;
+	line-height: 1;
+	margin-bottom: 20px;
+}
+
+.heading h3 {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.heading p {
+	font-size: 16px;
+	margin-top: 0;
+}
+
+.part.second .heading {
+	color: #fff;
+}
+
+.heading h2:after {
+	content: "";
+	background-color: rgba(0,0,0,.2);
+	height: 3px;
+	width: 70px;
+	display: block;
+	margin: 23px auto 0;
+}
+
+.part ul {
+	padding: 0;
+}
+
+.part li {
+	width: 240px;
+	height: 330px;
+	float: left;
+	text-align: center;
+	margin: 70px 0;
+	list-style: none;
+}
+
+.part li + li {
+	// margin-left: 30px;
+}
+
+.part.second li {
+	color: #fff;
+}
+
+.part.third {
+	padding-bottom: 200px;
+}
+
+.part h2, .part h3 {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1;
+}
+
+.percent {
+	font-size: 20px;
+}
+
+.circle {
+	position: relative;
+}
+
+.circle strong {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 40px;
+}
+
+.art {
+	width: 130px;
+	height: 130px;
+	margin: 0 auto;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.art.first {
+	background-image: url("../img/img1.png");
+}
+
+.art.second {
+	background-image: url("../img/img2.png");
+}
+
+.art.third {
+	background-image: url("../img/img3.png");
+}
+
+.art.fourth {
+	background-image: url("../img/img4.png");
+}
+
+.photo {
+	border-radius: 50%;
+}
+
+.social a {
+	text-decoration: none; 
+}
+
+.social a + a {
+	margin-left: 5px;
+}
+
+.title {
+	color: #30bae7;
+	font-size: 14px;
+	margin-bottom: 25px;
+	display: block; // dodać display block albo inline-block jak margin nie działa
+}
+
+#portfolio-menu {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#portfolio-menu a {
+	color: #393939;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 5px 20px;
+	transition: .3s;
+	border-radius: 5px;
+	background-color: #ebc985;
+}
+
+#porfolio-grid {
+	overflow: hidden;
+}
+
+#portfolio-grid a {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+.part.sixth .heading {
+	color: #fff;
+}
+
+#reviews-grid {
+
+}
+
+.reviews-item {
+	width: 50%;
+	float: left;
+}
