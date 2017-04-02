@@ -17,7 +17,7 @@ body {
 }
 
 .part {
-	min-height: 100vh;
+	min-height: 600px;
 	overflow: hidden;
 }
 
@@ -68,6 +68,14 @@ body {
 	background-color: #643a79;
 }
 
+#menu-mobile {
+	display: none;
+	background: url("../img/menu.svg") no-repeat center;
+	background-color: #fff;
+	width: 40px;
+	height: 40px;
+}
+
 .part.second {
 	background-color: #17c2a4;
 }
@@ -94,7 +102,11 @@ body {
 
 .container {
 	width: 960px;
-	margin: 0 auto; // centruje 
+	margin: 0 auto;
+}
+
+#fifth {
+	min-height: 1000px !important;
 }
 
 #headline {
@@ -102,7 +114,7 @@ body {
 	text-align: center;
 	font-weight: bold;
 	color: #fff;
-	margin-top: 130px;
+	margin-top: 200px;
 }
 
 .button {
@@ -117,6 +129,11 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	font-weight: bold;
+	transition: .3s;
+}
+
+.button:active, .button:hover {
+	box-shadow: inset 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
 }
 
 .button.orange {
@@ -178,7 +195,7 @@ body {
 
 .part li {
 	width: 215px;
-	height: 330px;
+	min-height: 330px;
 	float: left;
 	text-align: center;
 	margin: 70px 0;
@@ -212,13 +229,13 @@ body {
 }
 
 .circle strong {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 40px;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 40px;
 }
 
 .art {
@@ -356,7 +373,6 @@ body {
 form {
 	display: block;
 	text-align: center;
-	height: 500px;
 	margin: 0 auto;
 }
 
@@ -392,7 +408,7 @@ form textarea {
 
 footer {
 	clear: both;
-	height: 80px;
+	min-height: 80px;
 	width: 100%;
 	background-color: #344b8e;
 }
@@ -418,4 +434,119 @@ footer li a {
 	color: #fff;
 	font-weight: bold;
 	font-size: 20px;
+}
+
+@media (max-width: 650px) {
+	.part li { 
+		width: 100% !important;
+	}
+
+	#portfolio-grid a {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	#menu-mobile {
+		display: inline-block;
+	}
+
+	#menu {
+		margin-top: 60px;
+	}
+
+	#menulink {
+		display: none;
+	}
+
+	nav:hover #menulink {
+		display: block;
+		z-index: 1000;
+		position: absolute;
+		padding: 30px;
+		background-color: #87509c;
+		right: 20px;
+		width: 50%;
+		border-radius: 5px 0 5px 5px;
+		border: 1px solid #fff;
+	}
+
+	nav #menulink a {
+		text-align: center;
+		width: 100%;
+		display: block;
+		padding: 10px 0;
+	}
+
+	nav #menulink a + a {
+		margin-left: 0;
+	}
+
+	#headline {
+		font-size: 20px !important;
+		margin-top: 100px !important;
+	}
+
+	.reviews-container {
+		width: 100%;
+	}
+
+	.button.blue {
+		margin-left: -40px;
+	}
+}
+
+@media (max-width: 1000px) {
+	#headline {
+		font-size: 30px;
+		margin-top: 150px;
+	}
+
+	.part li {
+		width: 45%;
+		margin: 20px 0;
+	}
+
+	.part li + li {
+		margin-left: 0;
+	}
+
+	.part.third {
+		padding-bottom: 0;
+	}
+
+	#portfolio-grid img {
+		width: 300px;
+	}
+
+	#menu {
+		margin-right: 50px;
+	}
+
+	#logo {
+		margin-left: 50px;
+	}
+
+	.reviews-item {
+		width: 100%;
+	}
+
+	form {
+		width: 70%;
+	}
+	
+	form input {
+		width: calc(76% + 4px)
+	}
+
+	#firstname {
+		margin-right: 0;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	footer li a {
+		font-size: 12px;
+	}
 }

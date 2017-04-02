@@ -1,4 +1,4 @@
-$(document).on('ready', function () {
+$(document).ready(function () {
 
 $('.circle').circleProgress({  startAngle: -Math.PI / 4 * 2});
 

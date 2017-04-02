@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Portfolio</title>
 		<link rel="stylesheet" href="css/stylesheet.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<section class="part first">
@@ -11,11 +12,14 @@
 				<header id="top">
 					<a href="#" id="logo">Cuda</a>
 					<nav id="menu">
-						<a href="#" class="active">Home</a>
-						<a href="#">About</a>
-						<a href="#">Work</a>
-						<a href="#">Blog</a>
-						<a href="#">Contact</a>
+						<a href="#" id="menu-mobile"></a>
+						<span id="menulink">
+							<a href="index.html" class="active">Home</a>
+							<a href="#about">About</a>
+							<a href="#work">Work</a>
+							<a href="#blog">Blog</a>
+							<a href="#contact">Contact</a>
+						</span>
 					</nav>
 				</header>
 				<p id="headline">Hi there, we are the new kids on the block and we build awesome websites and mobile apps</p>
@@ -25,6 +29,7 @@
 			</div>
 		</section>
 		<section class="part second">
+			<a href="#" id="about"></a>
 			<div class="container">
 				<header class="heading">
 					<h2>Services we provide</h2>
@@ -55,6 +60,7 @@
 			</div>
 		</section>
 		<section class="part third">
+			<a href="#" id="work"></a>
 			<div class="container">
 				<header class="heading">
 					<h2>Meet our beautiful team</h2>
@@ -145,6 +151,7 @@
 			</div>
 		</section>
 		<section class="part fourth">
+			<a href="#" id="portfolio"></a>
 			<div class="container">
 				<header class="heading">
 					<h2>We got skills!</h2>
@@ -194,7 +201,7 @@
 				</ul>
 			</div>
 		</section>
-		<section class="part fifth">
+		<section class="part fifth" id="fifth">
 			<div class="container">
 				<header class="heading">
 					<h2>Our portfolio</h2>
@@ -226,6 +233,7 @@
 			</div>
 		</section>
 		<section class="part sixth">
+			<a href="#" id="blog"></a>
 			<div class="container">
 				<header class="heading">
 					<h2>What people say about us</h2>
@@ -264,6 +272,7 @@
 			</div>
 		</section>
 		<section class="part seventh">
+			<a href="#" id="contact"></a>
 			<div class="container">
 				<header class="heading">
 					<h2>Get in touch</h2>
@@ -271,9 +280,9 @@
 				</header>
 					<div id="form">
 						<form>
-							<input type="text" name="firstname" id="firstname">
-							<input type="email" name="email" id="email"><br>
-							<textarea rows="10" cols="50"></textarea>
+							<input type="text" name="firstname" id="firstname" placeholder="Name">
+							<input type="email" name="email" id="email" placeholder="E-mail"><br>
+							<textarea rows="10" cols="50" placeholder="Your message..."></textarea>
 							<p class="top-button">
 								<a href="#" class="button blue">Send message</a>
 							</p>
@@ -294,7 +303,7 @@
 				</ul>
 			</div>
 		</footer>
-		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="js/circle-progress.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
