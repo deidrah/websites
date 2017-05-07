@@ -33,6 +33,7 @@ nav {
 
 #logo {
     background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
     float: left;
     width: 238px;
     height: 45px;    
@@ -305,9 +306,46 @@ footer {
     color: #ec5c63 !important;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 700px) {
+    #logo, #user-actions {
+        display: block !important;
+        float: none !important;
+        margin: 0 auto;
+    }
+    
+    #logo {
+        margin-bottom: 20px;
+    }
+    
+    #user-actions {
+        div {
+            float: none !important;
+        }
+        #login {
+            text-align: center;
+            margin-bottom: 20px;
+            &:before {
+                float: none !important;
+                display: inline-block;
+            }
+        }
+        #register {
+            margin: 0 auto;
+        }
+        height: 60px;
+    }
+    footer #links-left {
+        float: none !important;
+    }
+    header {
+        min-height: 1300px !important;
+    }
+}
+
+@media (max-width: 1200px) {
     .container h1 {
         font-size: 28px;
+        margin-top: 100px !important;
     }
     
     .col {
@@ -332,12 +370,37 @@ footer {
     #links {
         margin-left: 0 !important;
         margin-top: 30px;
+        width: 100% !important;
+        text-align: center;
+    }
+    
+    #links-left {
+        float: none !important;
+        margin-right: 0 !important;
+    }
+    
+    #about {
+        width: 100% !important;
     }
     
     #socials {
         width: 100% !important;
         margin-top: 30px;
         text-align: center;
+    }
+    
+    header {
+        min-height: 1100px;
+    }
+    
+    label {
+        display: block;
+        margin: 20px auto;
+    }
+    
+    button {
+        display: block !important;
+        margin: 20px auto !important;
     }
     
 }

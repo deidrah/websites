@@ -27,6 +27,7 @@ nav {
 
 #logo {
   background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
   float: left;
   width: 238px;
   height: 45px; }
@@ -248,9 +249,34 @@ footer {
   text-decoration: underline !important;
   color: #ec5c63 !important; }
 
-@media (max-width: 1300px) {
+@media (max-width: 700px) {
+  #logo, #user-actions {
+    display: block !important;
+    float: none !important;
+    margin: 0 auto; }
+  #logo {
+    margin-bottom: 20px; }
+  #user-actions {
+    height: 60px; }
+    #user-actions div {
+      float: none !important; }
+    #user-actions #login {
+      text-align: center;
+      margin-bottom: 20px; }
+      #user-actions #login:before {
+        float: none !important;
+        display: inline-block; }
+    #user-actions #register {
+      margin: 0 auto; }
+  footer #links-left {
+    float: none !important; }
+  header {
+    min-height: 1300px !important; } }
+
+@media (max-width: 1200px) {
   .container h1 {
-    font-size: 28px; }
+    font-size: 28px;
+    margin-top: 100px !important; }
   .col {
     display: block !important;
     width: 100% !important;
@@ -266,8 +292,23 @@ footer {
     align-items: center; }
   #links {
     margin-left: 0 !important;
-    margin-top: 30px; }
+    margin-top: 30px;
+    width: 100% !important;
+    text-align: center; }
+  #links-left {
+    float: none !important;
+    margin-right: 0 !important; }
+  #about {
+    width: 100% !important; }
   #socials {
     width: 100% !important;
     margin-top: 30px;
-    text-align: center; } }
+    text-align: center; }
+  header {
+    min-height: 1100px; }
+  label {
+    display: block;
+    margin: 20px auto; }
+  button {
+    display: block !important;
+    margin: 20px auto !important; } }
