@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zielony Gaj</title>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
+        <link rel="stylesheet" href="assets/styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md navbar-light">
+                   <div id="logo"><a class="navbar-brand" href="#"><img src="img/logo.png"></a></div>           
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">☰</button> 
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <div>
+                            <a href="tel:+48893892893">+48 893 892 893 </a>/
+                            <a href="mailto:biuro@zielonygaj.pl">biuro@zielonygaj.pl</a>
+                        </div>
+                        <ul class="nav navbar-nav ml-auto justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">O nas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cennik</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+                <div class="owl-carousel owl-theme" id="carouselOne">
+                    <div id="slide1" class="slide">
+                        <div class="slide-container">
+                            <h1 id="slogan">Gościnność to nasza pasja</h1>
+                            <div id="calendar"></div>
+                            <button>Sprawdź dostępność</button>
+                        </div>
+                    </div>
+                    <div id="slide2" class="slide">
+                        <div class="slide-container">
+                            <h1 id="slogan">Gościnność to nasza pasja</h1>
+                            <div id="calendar"></div>
+                            <button>Sprawdź dostępność</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="shape"><p>scroll</p><a href="#"><img src="img/shape.png"></a></div>
+        </header>
+        <section id="about">
+            <div class="container-fluid">
+                <div class="about-container">
+                    <h2>Witamy w Zielonym Gaju</h2>
+                    <p>Gładź drużkę jak refektarz, z wolna krocz stado cielic tyrolski z łowów wracając trafia się, toczył zdumione źrenic gorzały przeciw czarów. Raz w senacie, znowu je napełnił myślami. Po cóż te pogoni ledwie słów kilka wyrzekł, do gospody.</p>
+                    <button>Więcej</button>
+                </div>
+            </div>
+        </section>
+        <section id="rooms">
+            <div class="container-fluid">
+                <div class="half">
+                    <div id="rooms-pic" class="half-pic">
+
+                    </div>
+                </div>
+                <div class="half">
+                    <div class="text-content">
+                        <h2>Gustowne pokoje dla każdego</h2>
+                        <p>Gładź drużkę jak refektarz, z wolna krocz stado cielic tyrolski z łowów wracając trafia się, toczył zdumione źrenic gorzały przeciw czarów. Raz w senacie, znowu je napełnił myślami. Po cóż te pogoni ledwie słów kilka wyrzekł, do gospody.</p>
+                        <button>Zobacz pokoje</button>
+                    </div>
+                </div>
+            </div>
+            <div id="rooms-gallery">
+                <div id="gallery-one" class="rooms-gallery-item"></div>
+                <div id="gallery-two" class="rooms-gallery-item"></div>
+            </div>
+        </section>
+        <section id="attractions">
+                <div class="container-fluid">
+                        <div class="half">
+                            <div class="text-content">
+                                <h2>Natura najlepszą formą relaksu</h2>
+                                <p>Gładź drużkę jak refektarz, z wolna krocz stado cielic tyrolski z łowów wracając trafia się, toczył zdumione źrenic gorzały przeciw czarów. Raz w senacie, znowu je napełnił myślami. Po cóż te pogoni ledwie słów kilka wyrzekł, do gospody.</p>
+                                <button>Zobacz pokoje</button>
+                            </div>
+                        </div>
+                        <div class="half">
+                                <div id="attractions-pic" class="half-pic">
+            
+                                </div>
+                            </div>
+                    </div>
+                    
+        </section>
+        <section id="food">
+                <div class="container-fluid">
+                    <div class="half">
+                        <div id="food-pic" class="half-pic">
+    
+                        </div>
+                    </div>
+                    <div class="half">
+                        <div class="text-content">
+                            <h2>Przepyszne śniadania w cenie pobytu</h2>
+                            <p>Gładź drużkę jak refektarz, z wolna krocz stado cielic tyrolski z łowów wracając trafia się, toczył zdumione źrenic gorzały przeciw czarów. Raz w senacie, znowu je napełnił myślami. Po cóż te pogoni ledwie słów kilka wyrzekł, do gospody.</p>
+                            <button>Zobacz pokoje</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <div class="container-fluid">
+                    <div id="contact-box">
+                            <div class="contact-box-container">
+                                <div id="contact-logo"><a href="#"><img src="img/logo-contact.png"></a></div>
+                                <div><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                        <path fill="#ffffff" d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+                                    </svg><a href="mailto:biuro@zielonygaj.pl" class="contact-item">biuro@zielonygaj.pl</a></div>
+                                <div><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                        <path fill="#ffffff" d="M17,19H7V5H17M17,1H7C5.89,1 5,1.89 5,3V21A2,2 0 0,0 7,23H17A2,2 0 0,0 19,21V3C19,1.89 18.1,1 17,1Z" />
+                                    </svg><a href="tel:+48893892893" class="contact-item">+48 893 892 893 </a></div>
+                                <div><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                        <path fill="#ffffff" d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" />
+                                    </svg><span class="contact-item">ul.Długa 82<br>83-262 Czarna Woda</span></div>
+                                <button>Formularz kontaktowy</button>
+                                
+                            </div>
+                        </div>
+                        
+                <div id='map'></div>
+                
+            </div>   
+        </section>
+        <footer>
+            <div class="container-fluid">
+                <div class="footer-container">
+                    <div class="scroll-up"></div>
+                    <div id="footer-menu">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">O nas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cennik</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="company"><a href="#"><img src="img/flat-eight.png"></a></div>
+                </div>
+            </div>
+        </footer>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
+        <script src="assets/scripts.js"></script>
+        
+    </body>
+</html>
